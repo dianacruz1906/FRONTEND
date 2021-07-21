@@ -1,0 +1,279 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    width: 100vw;
+}
+header {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 0.5rem;
+}
+
+button {
+    background: #F0A83E;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 0.3rem;
+    padding: 1rem;
+}
+
+.header__settings-nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2rem 2rem;
+}
+
+.header__main-nav {
+    background-color: #F0A83E;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.5rem 2rem;
+}
+
+.menu i {
+    margin-right: 0.2rem;
+    justify-content: flex-end;
+}
+
+.burger {
+    visibility: hidden;
+}
+
+.banner {
+    background-image: url('file:///C:/Users/diana/OneDrive/Escritorio/pet%20shop/img/bowl-and-pet-daities-on-green-background%201.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow:column;
+    justify-content: center;
+    align-items:flex-end;
+    padding-right: 1rem;
+}
+
+.banner__main-text span {
+    background: #fff;
+    border-radius: 5px;
+    font-size: 1.875rem;
+    padding: 0.8rem;
+    
+}
+
+.banner p {
+    margin: 0.9rem 2rem;
+    font-size: 1.5rem;
+}
+
+.content-products {
+    text-align: center;
+    line-height: 2.5rem;
+    margin-top: 2rem;
+}
+
+.content-products h1 {
+    color: #3C2313;
+}
+
+.content-products a {
+    text-decoration: none;
+    color: #000;
+}
+
+.products-list {
+    display: flex;
+    justify-content: center;
+}
+
+.products-list article {
+    margin: 3rem 0.6rem;
+}
+
+.main-icon {
+    color: #F0A83E;
+    display: block;
+    font-size: 5rem;
+}
+
+#contact {
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    padding-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#contact h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+#form-contact input {
+    margin: 0.3rem;
+    width: 21rem;
+    height: 2.5rem;
+    background: #3C2313;
+    border-radius: 15px;
+    border-style: none;
+}
+
+#form-contact input[placeholder] {
+    color: white;
+    font-size: 0.6rem;
+    padding-left: 0.8rem;
+}
+
+.form-button {
+    display: flex;
+    justify-content: center;
+}
+
+.reset, .send {
+    border-radius: 20px;
+}
+
+.reset {
+    background: #8A8787;
+}
+
+.send {
+    background: #F0A83E;
+}
+
+#subscription {
+    background: #F0A83E;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+}
+
+.subscription-title {
+    display: flex;
+    align-items: center;
+}
+
+.subscription-title img {
+    margin-right: 1rem;
+}
+
+.subscription-title span {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+#form-subscription input {
+    background: #fff;
+    border-radius: 30px;
+    border-style: none;
+    padding: 1rem;
+}
+
+#form-subscription button {
+    background: #3C2313;
+    border-radius: 30px;
+    color: #fff;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    background: #3C2313;
+    color: #fff;
+    padding: 0 4rem;
+}
+
+.info-icon {
+    background: #8A8787;
+    border-radius: 50%;
+    padding: 0.5rem;
+}
+
+.icon-text {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.icon-text i {
+    margin-right: 1rem;
+}
+
+.info__main-text {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.info__secondary-text {
+    font-size: 0.75rem;
+    font-weight: 300;
+}
+
+.about img {
+    align-self: center;
+    max-height: 23px;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+}
+
+/* Smartphones */
+@media screen and (max-width: 480px) {
+    .header__settings-nav {
+        display: none;
+    }
+    .header__main-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    .menu {
+        display: none;
+    }
+    .burger {
+        visibility: visible;
+        color: #fff;
+        font-size: 1.5rem;
+    }
+    .banner {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    .content-products {
+        margin-top: 1rem;
+    }
+    .products-list {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    .reset, .send {
+        flex-grow: 1;
+    }
+    #subscription {
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .about {
+        display: flex;
+        flex-flow: column nowrap;
+        padding-top: 0.5rem;
+    }
+    .info-section {
+        order: 1;
+    }
+}
